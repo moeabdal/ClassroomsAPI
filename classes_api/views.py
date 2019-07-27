@@ -12,7 +12,7 @@ class ClassroomListAPI(ListAPIView):
 
 class ClassroomDetailAPI(RetrieveAPIView):
 	queryset = Classroom.objects.all()
-	serializer_class = ClassroomDetailSerializer
+	serializer_class = ClassroomUpdateSerializer
 	lookup_id = 'id'
 	lookup_url_kwarg = 'classroom_id'
 
